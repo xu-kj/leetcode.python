@@ -8,7 +8,7 @@ A region is **captured** by flipping all `'O'`s into `'X'`s in that surrounded r
 
 Example 1:
 
-![ex1](assets\xogrid.jpg "ex1")
+![ex1](./assets/xogrid.jpg "ex1")
 
 ```
 Input: board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
