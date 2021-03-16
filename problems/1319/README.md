@@ -8,7 +8,7 @@ Given an initial computer network `connections`. You can extract certain cables 
 
 Example 1:
 
-![ex1](.\assets\sample_1_1677.png "ex1")
+![ex1](assets\sample_1_1677.png "ex1")
 
 ```
 Input: n = 4, connections = [[0,1],[0,2],[1,2]]
@@ -18,7 +18,7 @@ Explanation: Remove cable between computer 1 and 2 and place between computers 1
 
 Example 2:
 
-![ex2](.\assets\sample_2_1677.png "ex2")
+![ex2](assets\sample_2_1677.png "ex2")
 
 ```
 Input: n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]
