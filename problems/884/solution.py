@@ -22,6 +22,6 @@ if __name__ == "__main__":
     sol = Solution()
     for t in test_cases:
         res = sol.uncommonFromSentences(t[0], t[1])
-        tf = res == t[2] # should check for equivalence
+        tf = collections.Counter(res) == collections.Counter(t[2])
         if not tf:
             sol.uncommonFromSentences(t[0], t[1])
