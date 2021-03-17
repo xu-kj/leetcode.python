@@ -3,22 +3,17 @@ from typing import List
 
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
-        hs = []
-        best = 0
-        for i in range(len(heights)):
-            height = heights[i]
-            start = i
-
-            while len(hs) > 0 and hs[-1][0] >= height:
-                last = hs.pop()
-                start = last[1]
-                if last[0] > height:
-                    best = max(best, last[0] * (i - last[1]))
-            hs.append((height, start))
-
-        areas = [h[0] * (len(heights) - h[1]) for h in hs]
-        best = max(best, max(areas) if len(areas) > 0 else 0)
-        return best
+        s = []
+        results = [0] * len(heights)
+        for i, height in enumerate(heights):
+            while s and height < s[-1][1]:
+                si, sh = s.pop()
+                results[si] = sh * (i - 1 - (s[-1][0] if s else -1))
+            s.append((i, height))
+        while s:
+            si, sh = s.pop()
+            results[si] = sh * (len(heights) - 1 - (s[-1][0] if s else -1))
+        return max(results) if results else 0
 
 
 if __name__ == "__main__":
