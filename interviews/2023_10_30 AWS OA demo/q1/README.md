@@ -36,7 +36,7 @@ ID|Transactions
 99|3
 88|2
 12|1
-321
+32|1
 
 There are two users with at least `threshold = 2` transactions: `99` and `88`.
 In ascending order, the return array is `['88', '99']`.
