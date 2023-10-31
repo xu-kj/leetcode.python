@@ -17,7 +17,7 @@ Consider the following input matrix `M`:
 001
 ```
 
-![connected_groups_example](./connected_groups_example.svg)
+![example](./connected_groups_example.svg)
 
 Every row corresponds to a subscriber and the value `M[i][j]` determines if `j` was gifted a book by `i`.
 In the above example, user `0` has gifted a book to user `1` and so they are connected `[0][1]`, while person `2` has not received a book from anyone or gifted book to anyone.
