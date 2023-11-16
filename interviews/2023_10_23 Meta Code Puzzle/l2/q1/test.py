@@ -1,4 +1,4 @@
-from v1 import getArtisticPhotographCount
+from v2 import getArtisticPhotographCount
 
 N = 5
 C = "APABA"

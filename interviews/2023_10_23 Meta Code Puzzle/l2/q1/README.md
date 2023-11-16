@@ -1,8 +1,8 @@
-# Director of Photography (Chapter 1)
+# Director of Photography (Chapter 2)
 
 Note:
-Chapter 2 is a harder version of this puzzle.
-The only difference is a larger constraint on `N`.
+Chapter 1 is an easier version of this puzzle.
+The only difference is a smaller constraint on `N`.
 
 A photography set consists of `N` cells in a row,
 numbered from `1` to `N` in order,
@@ -28,7 +28,7 @@ Two photographs are considered different if they involve a different photographe
 
 ## Constraints
 
-- `1 <= N <= 200`
+- `1 <= N <= 300,000`
 - `1 <= X <= Y <= N`
 
 ## Samples
